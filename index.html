@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Moderno</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importamos una fuente moderna desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Eva</h1>
+
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Bienvenido</h2>
+            <p>Por favor, ingresa tus credenciales</p>
+            
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" placeholder="Ej: admin123" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="login-btn">Iniciar Sesión</button>
+
+            <div class="form-footer">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <span>¿No tienes cuenta? <a href="#">Regístrate</a></span>
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
